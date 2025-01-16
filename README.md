@@ -99,21 +99,41 @@ A Java web application for an online gaming peripherals store, featuring user an
    - Fields: id, order_id, product_id, quantity, price
 
 ## Project Structure
-GamingStore/
-├── src/
-│   └── main/
-│       ├── java/
-│       │   └── com/
-│       │       └── gaming/
-│       │           ├── beans/    # Data models (User, Product, etc.)
-│       │           ├── dao/      # Database operations
-│       │           ├── servlets/ # Request handling
-│       │           └── util/     # Utilities (DBUtil)
-│       └── webapp/
-│           ├── WEB-INF/
-│           │   └── web.xml
-│           ├── *.jsp files
-│           └── styles.css
+
+### Source Files (src/main/java/com/gaming/)
+- **beans/**
+  - Cart.java
+  - CartItem.java
+  - Order.java
+  - OrderItem.java
+  - Product.java
+  - User.java
+- **dao/**
+  - CartItemDAO.java
+  - OrderDAO.java
+  - ProductDAO.java
+  - UserDAO.java
+- **servlets/**
+  - AdminProductServlet.java
+  - CartServlet.java
+  - CheckoutServlet.java
+  - LoginServlet.java
+  - LogoutServlet.java
+  - RegisterServlet.java
+- **util/**
+  - DBUtil.java
+
+### Web Files (src/main/webapp/)
+- **WEB-INF/**
+  - web.xml
+- admin.jsp
+- cart.jsp
+- login.jsp
+- orderConfirmation.jsp
+- orders.jsp
+- products.jsp
+- register.jsp
+- styles.css
 
 ## Dependencies
 Current dependencies:
